@@ -6,7 +6,7 @@ function handlerSubmit(evt) {
   const { email, password } = evt.currentTarget.elements;
 
   if (email.value === "" || password.value === "") {
-    alert("All fields must be completed 🤨");
+    return alert("All fields must be completed 🤨");
   }
 
   const data = {
